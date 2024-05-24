@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /* some styling */
+      .selected {
+        background-color: green;
+      }
+      .hidden{
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Quiz</h1>
+    <div>
+      <h2>Question 1</h2>
+      <p>What is the capital of France?</p>
+    </div>
+    <div>
+        <!-- create a element with a class answer, data-score and data-question -->
+      <button class="answer" data-question="1" data-score="1">Answer 1</button>
+      <button class="answer" data-question="1" data-score="2">Answer 1</button>
+
+      <button class="answer" data-question="1" data-score="3">Answer 1</button>
+      <button class="answer" data-question="1" data-score="4">Answer 1</button>
+    </div>
+    <div>
+      <h2>Question 2</h2>
+      <p>What is the capital of Germany?</p>
+    </div>
+    <div>
+      <button class="answer" data-question="2" data-score="1">Answer 1</button>
+      <button class="answer" data-question="2" data-score="2">Answer 1</button>
+
+      <button class="answer" data-question="2" data-score="3">Answer 1</button>
+      <button class="answer" data-question="2" data-score="4">Answer 1</button>
+    </div>
+    <div class="result" id="score">
+        <h2>Score</h2>
+        <p>0</p>
+    </div>
+    <div class="perfume perfume-1 hidden">
+        <img src="" alt="">
+        <p>perfume 1</p>
+    </div>
+    <script src="./quiz.js"></script>
+  </body>
+</html>
